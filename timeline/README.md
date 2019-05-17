@@ -57,3 +57,14 @@ package.json 中 script 设置node 内存大小
 #### iview 为什么没用 Class类？
 > 项目中用 Class类的话会不会提高维护成本？
 > element 中用了一部分 TableLayout 定义表格
+
+
+#### 批量局部注册组件
+```javascript
+const requireComponent = require.context('./router/', false, /(buyer-)+\w+\.js$/);
+let cmps = [];
+requireComponent.keys().map(fileName => {
+    let cmp = requireComponent(fileName).default;
+    cmps.push(...cmp);
+});
+```
