@@ -68,3 +68,17 @@ requireComponent.keys().map(fileName => {
     cmps.push(...cmp);
 });
 ```
+
+#### 批量注册路由
+```javascript
+const requireRouter = require.context('./router/', false, /buyer-\w+\.js$/);
+let cmps = [];
+requireRouter.keys().map(fileName => {
+    cmps.push(...requireRouter(fileName).default);
+});
+
+...
+        component: (resolve) => require(['./views/index.vue'], resolve),
+        children: cmps
+...
+```
