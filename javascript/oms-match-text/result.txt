@@ -1,184 +1,68 @@
 {
-  "name": {
-    "id": "0",
-    "key": "name",
-    "title": "采购品名称",
-    "width": "200",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
-    },
-    "isFormItem": false
+  "displayStyle": "Table",
+  "styleType": "customTable",
+  "typeClass": {
+    "isExpand": false,
+    "isNumber": true,
+    "isCheckbox": false,
+    "isOperation": false
   },
-  "code": {
-    "id": "1",
-    "key": "code",
-    "title": "采购品编码",
-    "width": "140",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
+  "typeData": {
+    "name": {
+      "id": "0",
+      "key": "name",
+      "title": "采购品名称",
+      "width": 200,
+      "ellipsis": true,
+      "align": "center",
+      "fixed": "left",
+      "customClass": {
+        "isShow": false,
+        "isChecked": true
+      },
+      "isFormItem": false
     },
-    "isFormItem": false
-  },
-  "spec": {
-    "id": "2",
-    "key": "spec",
-    "title": "规格型号",
-    "width": 200,
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
+    "spec": {
+      "id": "3",
+      "key": "spec",
+      "title": "规格型号",
+      "width": 120,
+      "ellipsis": true,
+      "align": "center",
+      "fixed": "left",
+      "customClass": {
+        "isShow": true,
+        "isChecked": true
+      },
+      "isFormItem": false
     },
-    "isFormItem": false
-  },
-  "techParameters": {
-    "key": "techParameters",
-    "id": "8",
-    "title": "技术参数",
-    "width": 200,
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
+    "purchaseAmount": {
+      "id": "5",
+      "key": "purchaseAmount",
+      "title": "数量",
+      "width": 130,
+      "ellipsis": true,
+      "align": "center",
+      "fixed": "left",
+      "customClass": {
+        "isShow": true,
+        "isChecked": true
+      },
+      "isFormItem": false
     },
-    "isFormItem": false
-  },
-  "purchaseAmount": {
-    "id": "3",
-    "key": "purchaseAmount",
-    "title": "数量",
-    "width": "130",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
-    },
-    "isFormItem": false
-  },
-  "unitName": {
-    "id": "4",
-    "key": "unitName",
-    "title": "计量单位",
-    "width": "75",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
-    },
-    "isFormItem": false
-  },
-  "appliedPersonAndPhone": {
-    "key": "appliedPersonAndPhone",
-    "id": "10",
-    "title": "申报人、电话",
-    "width": "200",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
-    },
-    "isFormItem": false
-  },
-  "appliedEnterprise": {
-    "key": "appliedEnterprise",
-    "id": "11",
-    "title": "申报企业",
-    "width": "95",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
-    },
-    "isFormItem": false
-  },
-  "useDept": {
-    "key": "useDept",
-    "id": "9",
-    "title": "使用单位",
-    "width": "120",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
-    },
-    "isFormItem": false
-  },
-  "purpose": {
-    "key": "purpose",
-    "id": "12",
-    "title": "用途",
-    "width": "150",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
-    },
-    "isFormItem": false
-  },
-  "needTime": {
-    "key": "needTime",
-    "id": "13",
-    "title": "需求日期",
-    "width": "150",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
-    },
-    "isFormItem": false
-  },
-  "comment": {
-    "id": "5",
-    "key": "comment",
-    "title": "采购品备注",
-    "width": "150",
-    "ellipsis": true,
-    "customClass": {
-      "isShow": true,
-      "isChecked": false
-    },
-    "isFormItem": false
-  },
-  "quoteUnitPrice": {
-    "key": "quoteUnitPrice",
-    "id": "12",
-    "title": "报价单价",
-    "unit": "元",
-    "width": 130,
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
-    },
-    "isFormItem": false
-  },
-  "quoteTotalPrice": {
-    "key": "quoteTotalPrice",
-    "id": "12",
-    "title": "报价总计",
-    "unit": "元",
-    "width": 130,
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
-    },
-    "isFormItem": false
-  },
-  "quoteStatusStr": {
-    "id": "5",
-    "key": "quoteStatusStr",
-    "title": "报价情况",
-    "width": 130,
-    "ellipsis": true,
-    "customClass": {
-      "isShow": false,
-      "isChecked": true
-    },
-    "isFormItem": false
+    "unitName": {
+      "id": "2",
+      "key": "unitName",
+      "title": "计量单位",
+      "width": 75,
+      "ellipsis": true,
+      "align": "center",
+      "fixed": "left",
+      "customClass": {
+        "isShow": true,
+        "isChecked": true
+      },
+      "isFormItem": false
+    }
   }
 }
