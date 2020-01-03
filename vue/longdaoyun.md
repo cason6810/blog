@@ -4,6 +4,17 @@
 #### 按身份拆分，例：采购商+采购商所配置应用
 
 
+#### 私有部署时不频繁修改打包配置（或不增加打包命令）
+使用同一个webpack.prodLocalization.config.js文件，在打包前请求回来对应配置文件，在main.js 中把配置合并覆盖到原有配置上，再执行webpack 打包。
+由于url没最终确定方案，暂时使用 www.longdaoyun.com的service进行保存，也就是说增加/修改 .json后一定要部署正式环境的 service 任务。
+
+##### 动态配置执行顺序
+> 1.打包前 `http://www.longdaoyun.com/service/json/context/${process.env.localization}.json` 得到基础配置（webpack.contentText.js中内容），主要标记 PLATFORM_FLAG、PLATFORM_TITLE；
+>
+> 2.打包中 根据 PLATFORM_FLAG === ‘3’ 去请求“圣牧”的logo 等信息；
+> 
+> 3.按正常的业务逻辑进行处理；
+
 #### 项目拆分： 
 - buyer-portal  对应分支 master-buyer-all/dev-buyer-all
 - supplier-portal  对应分支 master-supplier-all/dev-supplier-all
